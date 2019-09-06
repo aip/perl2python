@@ -1,0 +1,4 @@
+configobj==5.0.6
+teradatasql==16.20.0.47
+pytest==5.0
+tox==3.13.2

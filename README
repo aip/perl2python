@@ -1,0 +1,34 @@
+https://www.freelancer.com/projects/python/Translate-perl-script-python/details
+
+Translate perl script to python 3 
+
+I have a bunch of perl scripts that needs to be translated to python 3.
+
+See sample.docx
+
+############################
+####### SOLUTION ##########
+############################
+1. Install python 3.6.
+
+2. Install python packages from the current 'perl2python' directory by typing the following:
+pip install -r requirements.txt
+
+3. Run the tests from the current 'perl2python' directory by typing the following:
+tox
+
+Connection values to the Teradata test database: host='target_DBCcop1', user='dbc', password='dbc'.
+
+####### Version 1 ##########
+4.1. Make sure sample.py executable:
+chmod +x ./v1/cgi-bin/sample.py
+
+4.2. Run the CGI-server from the current 'perl2python/v1' directory by typing the following:
+python3 -m http.server --cgi
+
+4.3. View the result of the script in your browser by typing the following URL:
+http://localhost:8000/cgi-bin/sample.py
+http://localhost:8000/cgi-bin/sample.py?TARGET_TD_SYSTEM=target_DBC1
+
+
+
