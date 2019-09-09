@@ -67,7 +67,7 @@ def test_empty_form(capfd):
 <body>
     <h3>Teradata Test Set Listing</h3>
 <TABLE border=1 align=\"center\" width=\"90%\">
-<tr><td>Connection error! [Version 16.20.0.47] [Session 0] [Teradata SQL Driver] Hostname lookup failed for cop1</td></tr>
+<tr><td>Connection error! [Version 16.20.0.48] [Session 0] [Teradata SQL Driver] Hostname lookup failed for cop1</td></tr>
 <tr><td>dbc, , cop1</td></tr>
 </TABLE>
 </body>

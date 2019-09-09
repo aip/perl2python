@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Teradata Test Set Listing{% endblock %}
+{% block header %}
+    <h3>Teradata Test Set Listing</h3>
+{% endblock %}
+{% block content %}
+    <TABLE border=1 align="center" width="90%">
+    {% if error_messages %}
+    {% for message in error_messages %}
+        <tr><td>{{ message }}</td></tr>
+    {% endfor %}
+    {% endif %}
+    {% if rows %}
+        <tr>
+            <th>Test Set ID</th>
+            <th>Create Date</th>
+            <th>Purpose</th>
+            <th>Expiration<BR>Date</th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td align='center'>{{ row[0] }}</td>
+            <td align='center'>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td align='center'>{{ row[3] }}</td>
+        </tr>
+        {% endfor %}
+    {% endif %}
+    </TABLE>
+{% endblock %}

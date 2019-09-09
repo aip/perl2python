@@ -28,7 +28,14 @@ python3 -m http.server --cgi
 
 4.3. View the result of the script in your browser by typing the following URL:
 http://localhost:8000/cgi-bin/sample.py
-http://localhost:8000/cgi-bin/sample.py?TARGET_TD_SYSTEM=target_DBC1
+http://localhost:8000/cgi-bin/sample.py?TARGET_TD_SYSTEM=target_DBC
 
+####### Version 2 ##########
+5.1. Run the WSGI-server from the current 'perl2python' directory by typing the following:
+env FLASK_APP=v2.flask flask run
+
+5.3. View the result of the script in your browser by typing the following URL:
+http://localhost:5000/
+http://localhost:5000/?TARGET_TD_SYSTEM=target_DBC
 
 
